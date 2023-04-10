@@ -620,10 +620,9 @@ nav.scrolled #Spørgsmålknapberegn{
 @media(max-width:600px){
     .wrapper{
         width: 500px;
-        background-color: aliceblue;
     }
     .hero-section{
-        padding-top: 180px;
+        padding-top: 130px;
     }
     .hero-section h1{
         font-size: 60px;
@@ -631,6 +630,20 @@ nav.scrolled #Spørgsmålknapberegn{
         width: 350px;
         height: 171px;
         text-align: center;
-        margin: auto;
+        margin: 0 auto 40PX;
     }
+    .hero-section p {
+        width: 400px;
+        height: fit-content;
+        margin-bottom: 50px;
+    
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+        animation: fade 1.3s ease;
+    }
+    .btn.fill.stor{margin:0 auto 50px;}
 }
