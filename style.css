@@ -618,12 +618,18 @@ nav.scrolled #Spørgsmålknapberegn{
     }
 }
 @media(max-width:600px){
+    .wrapper{
+        width: 500px;
+        background-color: aliceblue;
+    }
     .hero-section{
         padding-top: 180px;
     }
     .hero-section h1{
         font-size: 60px;
         line-height: 70px;
+        width: 350px;
+        height: 171px;
         text-align: center;
         margin: auto;
     }
