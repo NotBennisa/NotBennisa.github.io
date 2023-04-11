@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="updateText(1)">
 <header>
   <div class="wrapper">
     <nav>
@@ -61,30 +61,36 @@
             <label for="">Vælg din kommune</label>
             <div class="din-kommune">
               <div class="selector">
-                    <select class="kommuneBoks"><option value="0.88">Landsgennemsnit</option><option value="0.85">Albertslund</option><option value="0.58">Allerød</option><option value="0.99">Assens</option><option value="0.75">Ballerup</option><option value="0.89">Billund</option><option value="0.93">Bornholm</option><option value="0.8">Brøndby</option><option value="1.1">Brønderslev</option><option value="0.64">Dragør</option><option value="0.76">Egedal</option><option value="0.81">Esbjerg</option><option value="1.14">Fanø</option><option value="1.03">Favrskov</option><option value="1.08">Faxe</option><option value="0.66">Fredensborg</option><option value="0.88">Fredericia</option><option value="0.5">Frederiksberg</option><option value="1.03">Frederikshavn</option><option value="0.96">Frederikssund</option><option value="0.65">Furesø</option><option value="1.05">Faaborg-Midtfyn</option><option value="0.44">Gentofte</option><option value="0.75">Gladsaxe</option><option value="0.66">Glostrup</option><option value="0.73">Greve</option><option value="0.94">Gribskov</option><option value="1.17">Guldborgsund</option><option value="0.95">Haderslev</option><option value="0.85">Halsnæs</option><option value="1.08">Hedensted</option><option value="0.78">Helsingør</option><option value="0.77">Herlev</option><option value="0.99">Herning</option><option value="0.69">Hillerød</option><option value="1.19">Hjørring</option><option value="0.96">Holbæk</option><option value="1.08">Holstebro</option><option value="0.89">Horsens</option><option value="0.72">Hvidovre</option><option value="0.85">Høje-Taastrup</option><option value="0.59">Hørsholm</option><option value="1">Ikast-Brande</option><option value="0.9">Ishøj</option><option value="1.2">Jammerbugt</option><option value="1.01">Kalundborg</option><option value="1">Kerteminde</option><option value="0.94">Kolding</option><option value="0.8">København</option><option value="0.87">Køge</option><option value="1.16">Langeland</option><option value="1.06">Lejre</option><option value="1.27">Lemvig</option><option value="1.23">Lolland</option><option value="0.63">Lyngby-Taarbæk</option><option value="1.3">Læsø</option><option value="1.15">Mariagerfjord</option><option value="0.95">Middelfart</option><option value="1.2">Morsø</option><option value="1">Norddjurs</option><option value="1.04">Nordfyn</option><option value="1.15">Nyborg</option><option value="0.98">Næstved</option><option value="1">Odder</option><option value="0.68">Odense</option><option value="0.98">Odsherred</option><option value="0.89">Randers</option><option value="1.2">Rebild</option><option value="1.05">Ringkøbing-Skjern</option><option value="0.99">Ringsted</option><option value="0.84">Roskilde</option><option value="0.56">Rudersdal</option><option value="0.72">Rødovre</option><option value="1.5">Samsø</option><option value="0.95">Silkeborg</option><option value="0.86">Skanderborg</option><option value="1">Skive</option><option value="0.96">Slagelse</option><option value="0.9">Solrød</option><option value="0.95">Sorø</option><option value="1.1">Stevns</option><option value="1.2">Struer</option><option value="1.06">Svendborg</option><option value="1">Syddjurs</option><option value="0.93">Sønderborg</option><option value="1.28">Thisted</option><option value="1.2">Tønder</option><option value="0.61">Tårnby</option><option value="0.64">Vallensbæk</option><option value="1.02">Varde</option><option value="1.06">Vejen</option><option value="0.91">Vejle</option><option value="1.18">Vesthimmerland</option><option value="0.95">Viborg</option><option value="1.02">Vordingborg</option><option value="1.1">Ærø</option><option value="0.95">Aabenraa</option><option value="0.98">Aalborg</option><option value="0.79">Aarhus</option></select>
+                    <select class="kommuneBoks" id="selectkommune" onchange="updateSelectText(this.value)"><option value="0.88">Landsgennemsnit</option><option value="0.85">Albertslund</option><option value="0.58">Allerød</option><option value="0.99">Assens</option><option value="0.75">Ballerup</option><option value="0.89">Billund</option><option value="0.93">Bornholm</option><option value="0.8">Brøndby</option><option value="1.1">Brønderslev</option><option value="0.64">Dragør</option><option value="0.76">Egedal</option><option value="0.81">Esbjerg</option><option value="1.14">Fanø</option><option value="1.03">Favrskov</option><option value="1.08">Faxe</option><option value="0.66">Fredensborg</option><option value="0.88">Fredericia</option><option value="0.5">Frederiksberg</option><option value="1.03">Frederikshavn</option><option value="0.96">Frederikssund</option><option value="0.65">Furesø</option><option value="1.05">Faaborg-Midtfyn</option><option value="0.44">Gentofte</option><option value="0.75">Gladsaxe</option><option value="0.66">Glostrup</option><option value="0.73">Greve</option><option value="0.94">Gribskov</option><option value="1.17">Guldborgsund</option><option value="0.95">Haderslev</option><option value="0.85">Halsnæs</option><option value="1.08">Hedensted</option><option value="0.78">Helsingør</option><option value="0.77">Herlev</option><option value="0.99">Herning</option><option value="0.69">Hillerød</option><option value="1.19">Hjørring</option><option value="0.96">Holbæk</option><option value="1.08">Holstebro</option><option value="0.89">Horsens</option><option value="0.72">Hvidovre</option><option value="0.85">Høje-Taastrup</option><option value="0.59">Hørsholm</option><option value="1">Ikast-Brande</option><option value="0.9">Ishøj</option><option value="1.2">Jammerbugt</option><option value="1.01">Kalundborg</option><option value="1">Kerteminde</option><option value="0.94">Kolding</option><option value="0.8">København</option><option value="0.87">Køge</option><option value="1.16">Langeland</option><option value="1.06">Lejre</option><option value="1.27">Lemvig</option><option value="1.23">Lolland</option><option value="0.63">Lyngby-Taarbæk</option><option value="1.3">Læsø</option><option value="1.15">Mariagerfjord</option><option value="0.95">Middelfart</option><option value="1.2">Morsø</option><option value="1">Norddjurs</option><option value="1.04">Nordfyn</option><option value="1.15">Nyborg</option><option value="0.98">Næstved</option><option value="1">Odder</option><option value="0.68">Odense</option><option value="0.98">Odsherred</option><option value="0.89">Randers</option><option value="1.2">Rebild</option><option value="1.05">Ringkøbing-Skjern</option><option value="0.99">Ringsted</option><option value="0.84">Roskilde</option><option value="0.56">Rudersdal</option><option value="0.72">Rødovre</option><option value="1.5">Samsø</option><option value="0.95">Silkeborg</option><option value="0.86">Skanderborg</option><option value="1">Skive</option><option value="0.96">Slagelse</option><option value="0.9">Solrød</option><option value="0.95">Sorø</option><option value="1.1">Stevns</option><option value="1.2">Struer</option><option value="1.06">Svendborg</option><option value="1">Syddjurs</option><option value="0.93">Sønderborg</option><option value="1.28">Thisted</option><option value="1.2">Tønder</option><option value="0.61">Tårnby</option><option value="0.64">Vallensbæk</option><option value="1.02">Varde</option><option value="1.06">Vejen</option><option value="0.91">Vejle</option><option value="1.18">Vesthimmerland</option><option value="0.95">Viborg</option><option value="1.02">Vordingborg</option><option value="1.1">Ærø</option><option value="0.95">Aabenraa</option><option value="0.98">Aalborg</option><option value="0.79">Aarhus</option></select>
               </div>
               <div class="kommune-tal">
-                <p id="komuneProcentdel"> 743%</p>
+                <p id="komuneProcentdel"></p>
               </div>
             </div>
         </div>
-          <div class="månedsløn boks"><label>Din månedsløn før skat
-            <input type="number" id="månedsløn tal" min="0">
-
-          </label></div>
+          <div class="månedslønboks">
+            <label>Din månedsløn før skat</label>
+            <input type="number" id="salary" min="0" maxlength="12" max="1000000">
+          </div>
 
           <div class="tidsperiode">
-            <label>Vælg tidsperiode
-
-                
-            </label>
+            <label>Vælg tidsperiode</label>
+            <div class="slider">
+              <p id="periodetal"></p>
+              <input id="sliderting" type="range" min="1" max="3" value="1" onchange="updateText(this.value)">
+            </div>
+          </div>
+          <div class="beloeb">
+            <p>Du kan spare</p>
+            <p id="beløb"></p>
+            <p id="beløbord"></p>
           </div>
 
         </form>
       </div>
     </div>
     <div class="right">
-      <h2>Beregn hvor meget du kan spare</h2>
+      <h2></h2>
       <a href="#"> Afmeld nu</a>
     </div>
   </div>
