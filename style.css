@@ -698,4 +698,12 @@ nav.scrolled #Spørgsmålknapberegn{
         width: 280px;
     }
     .kommune-tal{padding-right: 5px;}
+    #poverbevist1{
+        width: 300px;
+        
+        height: fit-content;
+    }
+    #poverbevist2{
+        width: 300px;
+    }
 }
