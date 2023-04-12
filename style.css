@@ -546,127 +546,7 @@ nav.scrolled #Spørgsmålknapberegn{
 }
 
 /* ------------------------------ Afmeld side --------------------------------------------------------------------------------------------------------- */
-.afmeldSection{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--main-color);
-    font-family: "Outfit", sans-serif;
-    color: var(--main-color);
-}
-.afmeldcontainer{
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    background-color: var(--white-color);
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.afmeldSection nav{
-    top: 0;
-}
-.afmeldcontainer header{
-    position: relative;
-    font-size: 20px;
-    font-weight: 600;
-    color: #333;
-}
-.afmeldcontainer header::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 3px;
-    width: 27px;
-    border-radius: 8px;
-    background-color: var(--main-color);
-}
-.afmeldcontainer form{
-    position: relative;
-    margin-top: 16px;
-    min-height: 490px;
-    background-color: var(--white-color);
-}
-.afmeldcontainer form .details{margin-top: 30px;}
-.afmeldcontainer form .details.ID{margin-top: 10px;}
-.afmeldcontainer form .afmeldtitle{
-    display: block;
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 6px 0;
-    color: #333;
-}
-.afmeldcontainer form .fields{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.afmeldcontainer form .input-field{
-    display: flex;
-    width: calc(100% / 3 - 15px);
-    flex-direction: column;
-    margin: 4px 0;
-}
-.input-field label{
-    font-size: 12px;
-    font-weight: 500;
-    color: #2e2e2e;
-}
-.input-field input{
-    padding: 0 15px;
-    outline: none;
-    color: #333;
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 5px;
-    border: 1px solid #aaa;
-    height: 42px;
-    margin: 8px 0;
-}
-.buttonstuff{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-}
-.buttonstuff a{
-    max-width: 200px;
-    width: 100%;
-    height: 70px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: #9651F5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-
-    font-weight: 700;
-    font-size: 36px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s linear;
-
-    color: var(--white-color);
-}
-.buttonstuff a:hover{
-    background-color: #ac70ff;
-    color: #fbfbfb;
-}
-
-.input-field input[type=date]{
-    color: #707070;
-}
-.input-field input[type=date]:valid{
-    color: #333;
-}
 @media(max-width: 1112px) {
     .wrapper{
         max-width: 900px;
@@ -823,6 +703,54 @@ nav.scrolled #Spørgsmålknapberegn{
     .btn.fill.stor{margin:0 auto 50px;}
     .beregner {
         width: 450px;
+    }
+    .selector select{
+        width: 280px;
+    }
+    .kommune-tal{padding-right: 5px;}
+    #poverbevist1{
+        width: 350px;
+        height: fit-content;
+        margin: 45px 0 60px;
+    }
+    #poverbevist2{
+        width: 350px;
+    }
+    .afmeldcontainer{
+        margin-top: 100px;
+    }
+}
+@media(max-width:400px){
+    .wrapper{
+        width: 390px;
+    }
+    .hero-section{
+        padding-top: 130px;
+    }
+    .hero-section h1{
+        font-size: 60px;
+        line-height: 70px;
+        width: 350px;
+        height: 171px;
+        text-align: center;
+        margin: 0 auto 40PX;
+    }
+    .hero-section p {
+        width: 350px;
+        height: fit-content;
+        margin-bottom: 50px;
+    
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+        animation: fade 1.3s ease;
+    }
+    .btn.fill.stor{margin:0 auto 50px;}
+    .beregner {
+        width: 350px;
     }
     .selector select{
         width: 280px;
