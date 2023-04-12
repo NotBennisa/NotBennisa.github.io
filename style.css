@@ -655,8 +655,9 @@ nav.scrolled #Spørgsmålknapberegn{
         width: 100%;
         height: 50%;
     }
+    .right h2{text-align: center; width: 350px;}
     .right h2::before{
-        content: "Afmeld nu";
+        content: "Afmeld nu og spar penge næste måned";
     }
     .tvivldiv{
         margin-bottom: 190px;
@@ -699,11 +700,11 @@ nav.scrolled #Spørgsmålknapberegn{
     }
     .kommune-tal{padding-right: 5px;}
     #poverbevist1{
-        width: 300px;
-        
+        width: 350px;
         height: fit-content;
+        margin: 45px 0 60px;
     }
     #poverbevist2{
-        width: 300px;
+        width: 350px;
     }
 }
