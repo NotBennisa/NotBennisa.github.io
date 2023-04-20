@@ -87,7 +87,7 @@ nav.scrolled .btn.stroke{
     background-color: #9B89B4;
 }
 nav ul li a:hover  {
-    color: var(--light-accent-color);
+    color: #e0e0e0;
 }
 
 .btn.fill {
@@ -328,7 +328,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 100px 0 25px 0;
     font-weight: 700;
     font-size: 75px;
-    line-height: 94px;
     text-align: center;
 }
 
@@ -361,7 +360,6 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .wrappertvivl{height: fit-content;}
 footer {
-
     height: auto;
     width: 100vw;
     background: #FEF6FF;
@@ -701,6 +699,7 @@ nav.scrolled #Spørgsmålknapberegn{
         animation: fade 1.3s ease;
     }
     .btn.fill.stor{margin:0 auto 50px;}
+    .btn.stroke.stor{margin-bottom: 50px;}
     .beregner {
         width: 450px;
     }
@@ -753,7 +752,7 @@ nav.scrolled #Spørgsmålknapberegn{
         width: 350px;
     }
     .selector select{
-        width: 280px;
+        width: 180px;
     }
     .kommune-tal{padding-right: 5px;}
     #poverbevist1{
@@ -763,9 +762,36 @@ nav.scrolled #Spørgsmålknapberegn{
     }
     #poverbevist2{
         width: 350px;
+        margin-bottom: 0;
     }
     .afmeldcontainer{
         margin-top: 100px;
+    }
+    .tvivldiv h2{
+        width: 300px;
+        font-size: 60px;
+        margin-top: 80px;
+    }
+    .footer-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .footer-list li{
+        margin-bottom: 10px;
+    }
+    .footer-content{margin-top: 0;}
+    .footer-content a {
+        margin-bottom: 10px;
+    }
+    .footer-content p{width: 90%;}
+    .månedslønboks input{
+        width: 100%;
+    }
+    .slider input{
+        width: 100%;
     }
 }
 
