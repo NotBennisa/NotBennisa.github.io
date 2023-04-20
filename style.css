@@ -721,7 +721,7 @@ nav.scrolled #Spørgsmålknapberegn{
     .beregnSide{padding-top: 80px;}
     .mobile-menu-container{height: 100%;}
 }
-@media(max-width:400px){
+@media(max-width: 480px){
     .wrapper{
         width: 390px;
     }
@@ -798,5 +798,6 @@ nav.scrolled #Spørgsmålknapberegn{
     .tvivl{padding-top: 80px; background-color: aquamarine;}
     .mobile-menu-container{height: 100%;}
 }
+
 
 
