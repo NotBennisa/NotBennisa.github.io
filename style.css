@@ -705,6 +705,7 @@ nav.scrolled #Spørgsmålknapberegn{
     }
     .selector select{
         width: 280px;
+        padding: 5px 17px 5px 15px;
     }
     .kommune-tal{padding-right: 5px;}
     #poverbevist1{
@@ -751,7 +752,7 @@ nav.scrolled #Spørgsmålknapberegn{
     }
     .btn.fill.stor{margin:0 auto 50px;}
     .beregner {
-        width: 350px;
+        width: 390px;
     }
     .selector select{
         width: 180px;
@@ -770,7 +771,7 @@ nav.scrolled #Spørgsmålknapberegn{
         margin-top: 100px;
     }
     .tvivldiv h2{
-        width: 300px;
+        width: 390px;
         font-size: 60px;
         margin-top: 0;
     }
@@ -795,9 +796,8 @@ nav.scrolled #Spørgsmålknapberegn{
     .slider input{
         width: 100%;
     }
-    .tvivl{padding-top: 80px; background-color: aquamarine;}
+    .tvivl{padding-top: 80px;}
     .mobile-menu-container{height: 100%;}
 }
-
 
 
